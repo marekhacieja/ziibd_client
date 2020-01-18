@@ -1,0 +1,27 @@
+<mat-card class="example-card">
+  <div>
+    <mat-form-field class="employeeId">
+      <input type="text" matInput placeholder="Country Id" [(ngModel)]="country.countryId" [disabled]="true">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field class="firstName">
+      <input type="text" matInput placeholder="Country name" [(ngModel)]="country.countryName">
+    </mat-form-field>
+
+    <mat-form-field class="firstName">
+      <input type="number" matInput placeholder="Region Id" [(ngModel)]="country.regionId">
+    </mat-form-field>
+
+    <p>
+      <button mat-raised-button color="primary" (click)="onSubmit(country)">Update</button>
+    </p>
+
+    <p>
+      <button mat-raised-button color="primary" [routerLink]="['/']">Go back</button>
+    </p>
+  </div>
+</mat-card>
+
+
+

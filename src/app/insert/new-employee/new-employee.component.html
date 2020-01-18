@@ -1,0 +1,39 @@
+<mat-card class="example-card">
+  <div>
+    <mat-form-field class="firstName">
+      <input type="text" matInput placeholder="First name" [(ngModel)]="employee.firstName">
+    </mat-form-field>
+
+    <mat-form-field class="firstName">
+      <input type="text" matInput placeholder="Last name" [(ngModel)]="employee.lastName">
+    </mat-form-field>
+
+    <mat-form-field class="firstName">
+      <input type="text" matInput placeholder="Email" [(ngModel)]="employee.email">
+    </mat-form-field>
+
+    <mat-form-field class="phoneNumber">
+      <input type="text" matInput placeholder="Phone number" [(ngModel)]="employee.phoneNumber">
+    </mat-form-field>
+  </div>
+
+  <mat-form-field class="firstName">
+    <input type="text" matInput placeholder="Job id" [(ngModel)]="employee.jobId">
+  </mat-form-field>
+
+  <mat-form-field class="firstName">
+    <input type="number" matInput placeholder="Salary" [(ngModel)]="employee.salary">
+  </mat-form-field>
+
+  <mat-form-field class="managerId">
+    <input type="number" matInput placeholder="Manager Id" [(ngModel)]="employee.managerId">
+  </mat-form-field>
+
+  <p>
+    <button mat-raised-button color="primary" (click)="onSubmit(employee)">Add</button>
+  </p>
+
+</mat-card>
+
+
+
